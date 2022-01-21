@@ -30,7 +30,7 @@ function App() {
           }
           setSwap(swp)
           setArr(tmp)
-        },500)
+        },1000)
         setTimeout(()=>{},2000)
       }
       setTimeout(()=>{
