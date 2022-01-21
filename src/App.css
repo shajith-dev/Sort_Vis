@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color:white
 }
 
 .App-logo {
@@ -35,4 +36,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.arr{
+  display: flex;
+  justify-content: center;
+}
+
+.ele{
+  margin:5px;
+  font-size: 10px;
+  width: 5px;
+}
+
+button{
+  margin-top:75px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border: none;
+  padding:10px;
+  border-radius: 10px;
+  color:black;
+  transition: all 450ms;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.09);
+  background-color: rgb(143, 240, 140);
 }
