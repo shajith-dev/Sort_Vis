@@ -7,7 +7,7 @@ function App() {
 
   function genRandomArray(){
     const tmp = []
-    for(let i=0;i<75;i++){
+    for(let i=0;i<50;i++){
       tmp.push(Math.floor((Math.random() * 295) + 5))
     }
     setArr(tmp)
@@ -15,11 +15,14 @@ function App() {
     return tmp
   }
 
-  function Sort(){
+  function delay(ms){
+    return new Promise(resolve=> setTimeout(resolve,ms))
+  }
+
+  async function Sort(){
     let tmp = arr     
     for(let i = 0; i < tmp.length; i++){ 
       for(let j = 0; j < ( tmp.length - i -1 ); j++){
-        setTimeout(()=>{
           const swp = []
           swp.push(j)
           swp.push(j+1)
@@ -30,11 +33,10 @@ function App() {
           }
           setSwap(swp)
           setArr(tmp)
-        },1000)
+          await delay(200)
       }
-      setTimeout(()=>{
-        setSwap([])
-      },1000)
+      await delay(200)
+      setSwap([])
     }
   }
 
