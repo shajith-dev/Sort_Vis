@@ -44,15 +44,16 @@
 }
 
 .ele{
-  margin:5px;
+  margin:0.5em;
   font-size: 10px;
   width: 5px;
+  color: black;
 }
 
 button{
-  margin-top:75px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
   background-color: white;
   border: none;
   padding:10px;
@@ -66,5 +67,21 @@ button{
 button:hover{
   cursor: pointer;
   transform: scale(1.09);
-  background-color: rgb(143, 240, 140);
+  background-color: rgb(66, 233, 224);
+}
+
+p{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.inp{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.btns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
